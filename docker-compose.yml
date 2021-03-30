@@ -1,0 +1,21 @@
+version: "2.2"
+services:
+    mysql1:
+      container_name: "mysql1"
+      image: mysql:latest
+      expose:
+          - "3306"
+      environment:
+          - MYSQL_ROOT_PASSWORD=a
+          - MYSQL_DATABASE=pucsdStudents
+      restart: always
+     
+    mysql2:
+      container_name: "mysql2"
+      image: mysql:latest
+      expose:
+          - "3306"
+      environment:
+          - MYSQL_ROOT_PASSWORD=a
+          - MYSQL_DATABASE=pucsdStudents
+      restart: always
